@@ -77,7 +77,7 @@ class csv_to_excel:
                 with pd.ExcelWriter('file.xls') as writer:
                     df.to_excel(writer, 'GFGSheet')
                     writer.save()
-                    msg.showinfo('Excel file ceated', 'Excel File created')
+                    msg.showinfo('Excel file created', 'Excel File created')
 
         except FileNotFoundError as e:
             msg.showerror('Error in opening file', e)
